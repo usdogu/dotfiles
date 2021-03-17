@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/gentoo/.config/wpg/wallpapers/wallhaven-473vwy.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0F0B0B",
+        "foreground": "#aabfc5",
+        "cursor": "#aabfc5"
+    },
+    "colors": {
+        "color0": "#0F0B0B",
+        "color1": "#AA5122",
+        "color2": "#D4661E",
+        "color3": "#AB694B",
+        "color4": "#EA952A",
+        "color5": "#E29F58",
+        "color6": "#E2C15E",
+        "color7": "#aabfc5",
+        "color8": "#768589",
+        "color9": "#AA5122",
+        "color10": "#D4661E",
+        "color11": "#AB694B",
+        "color12": "#EA952A",
+        "color13": "#E29F58",
+        "color14": "#E2C15E",
+        "color15": "#aabfc5"
+    }
+}

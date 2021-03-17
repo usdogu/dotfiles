@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/gentoo/.config/wpg/wallpapers/wallhaven-neekeo.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#1c1c0b",
+        "foreground": "#cbdde9",
+        "cursor": "#cbdde9"
+    },
+    "colors": {
+        "color0": "#1c1c0b",
+        "color1": "#986A34",
+        "color2": "#AC905A",
+        "color3": "#2F5E92",
+        "color4": "#4976A2",
+        "color5": "#5F8DAA",
+        "color6": "#6C9DD0",
+        "color7": "#cbdde9",
+        "color8": "#8e9aa3",
+        "color9": "#986A34",
+        "color10": "#AC905A",
+        "color11": "#2F5E92",
+        "color12": "#4976A2",
+        "color13": "#5F8DAA",
+        "color14": "#6C9DD0",
+        "color15": "#cbdde9"
+    }
+}

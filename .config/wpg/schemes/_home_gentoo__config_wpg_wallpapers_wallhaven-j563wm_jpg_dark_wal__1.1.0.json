@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/gentoo/.config/wpg/wallpapers/wallhaven-j563wm.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0c0b06",
+        "foreground": "#cdcce2",
+        "cursor": "#cdcce2"
+    },
+    "colors": {
+        "color0": "#0c0b06",
+        "color1": "#5867C5",
+        "color2": "#6B77CB",
+        "color3": "#887AA6",
+        "color4": "#7983B8",
+        "color5": "#7A85D1",
+        "color6": "#878FD4",
+        "color7": "#cdcce2",
+        "color8": "#8f8e9e",
+        "color9": "#5867C5",
+        "color10": "#6B77CB",
+        "color11": "#887AA6",
+        "color12": "#7983B8",
+        "color13": "#7A85D1",
+        "color14": "#878FD4",
+        "color15": "#cdcce2"
+    }
+}

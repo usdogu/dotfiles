@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/gentoo/.config/wpg/wallpapers/wallhaven-vmzevm.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#181910",
+        "foreground": "#cadcf0",
+        "cursor": "#cadcf0"
+    },
+    "colors": {
+        "color0": "#181910",
+        "color1": "#A89365",
+        "color2": "#4767AE",
+        "color3": "#6292B9",
+        "color4": "#68A1F0",
+        "color5": "#C0A99D",
+        "color6": "#94AFE6",
+        "color7": "#cadcf0",
+        "color8": "#8d9aa8",
+        "color9": "#A89365",
+        "color10": "#4767AE",
+        "color11": "#6292B9",
+        "color12": "#68A1F0",
+        "color13": "#C0A99D",
+        "color14": "#94AFE6",
+        "color15": "#cadcf0"
+    }
+}

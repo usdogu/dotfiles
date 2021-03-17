@@ -1,0 +1,10 @@
+[colors]
+background = #090403
+background-alt = #090403
+foreground = #e7c5a7
+foreground-alt = #e7c5a7
+active = #090403
+inactive = #5f3926
+highlight = #B46833
+error = #9F5B2C
+color0 = #FFFFFF

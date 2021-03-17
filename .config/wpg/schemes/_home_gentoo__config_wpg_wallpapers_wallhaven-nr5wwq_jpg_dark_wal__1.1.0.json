@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/gentoo/.config/wpg/wallpapers/wallhaven-nr5wwq.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#08102A",
+        "foreground": "#c6bbcc",
+        "cursor": "#c6bbcc"
+    },
+    "colors": {
+        "color0": "#08102A",
+        "color1": "#344F8C",
+        "color2": "#555E98",
+        "color3": "#5171BF",
+        "color4": "#AC758A",
+        "color5": "#C57B86",
+        "color6": "#BC828B",
+        "color7": "#c6bbcc",
+        "color8": "#8a828e",
+        "color9": "#344F8C",
+        "color10": "#555E98",
+        "color11": "#5171BF",
+        "color12": "#AC758A",
+        "color13": "#C57B86",
+        "color14": "#BC828B",
+        "color15": "#c6bbcc"
+    }
+}

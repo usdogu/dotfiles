@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/gentoo/.config/wpg/wallpapers/wallhaven-4grw27.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0d1119",
+        "foreground": "#ecc4c2",
+        "cursor": "#ecc4c2"
+    },
+    "colors": {
+        "color0": "#0d1119",
+        "color1": "#275694",
+        "color2": "#676696",
+        "color3": "#967295",
+        "color4": "#CB7686",
+        "color5": "#7582B3",
+        "color6": "#A886A8",
+        "color7": "#ecc4c2",
+        "color8": "#a58987",
+        "color9": "#275694",
+        "color10": "#676696",
+        "color11": "#967295",
+        "color12": "#CB7686",
+        "color13": "#7582B3",
+        "color14": "#A886A8",
+        "color15": "#ecc4c2"
+    }
+}

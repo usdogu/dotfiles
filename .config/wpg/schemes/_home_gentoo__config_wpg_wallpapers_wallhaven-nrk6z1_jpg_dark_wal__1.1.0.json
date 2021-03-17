@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/gentoo/.config/wpg/wallpapers/wallhaven-nrk6z1.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0c0c03",
+        "foreground": "#dedad1",
+        "cursor": "#dedad1"
+    },
+    "colors": {
+        "color0": "#0c0c03",
+        "color1": "#3C4C95",
+        "color2": "#5365A2",
+        "color3": "#7687AF",
+        "color4": "#B5AC91",
+        "color5": "#A6A8A8",
+        "color6": "#C3BBA3",
+        "color7": "#dedad1",
+        "color8": "#9b9892",
+        "color9": "#3C4C95",
+        "color10": "#5365A2",
+        "color11": "#7687AF",
+        "color12": "#B5AC91",
+        "color13": "#A6A8A8",
+        "color14": "#C3BBA3",
+        "color15": "#dedad1"
+    }
+}

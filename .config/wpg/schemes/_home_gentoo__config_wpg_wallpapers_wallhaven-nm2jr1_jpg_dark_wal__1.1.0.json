@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/gentoo/.config/wpg/wallpapers/wallhaven-nm2jr1.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#060B15",
+        "foreground": "#f1c3a5",
+        "cursor": "#f1c3a5"
+    },
+    "colors": {
+        "color0": "#060B15",
+        "color1": "#2E4963",
+        "color2": "#5B5B5E",
+        "color3": "#9B6E59",
+        "color4": "#E07440",
+        "color5": "#FE8A34",
+        "color6": "#A68774",
+        "color7": "#f1c3a5",
+        "color8": "#a88873",
+        "color9": "#2E4963",
+        "color10": "#5B5B5E",
+        "color11": "#9B6E59",
+        "color12": "#E07440",
+        "color13": "#FE8A34",
+        "color14": "#A68774",
+        "color15": "#f1c3a5"
+    }
+}

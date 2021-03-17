@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/gentoo/.config/wpg/wallpapers/wallhaven-eorkml.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0e1607",
+        "foreground": "#dfe0c9",
+        "cursor": "#dfe0c9"
+    },
+    "colors": {
+        "color0": "#0e1607",
+        "color1": "#8FA821",
+        "color2": "#A3B25B",
+        "color3": "#B6C844",
+        "color4": "#778788",
+        "color5": "#A1A8A3",
+        "color6": "#B9C2B5",
+        "color7": "#dfe0c9",
+        "color8": "#9c9c8c",
+        "color9": "#8FA821",
+        "color10": "#A3B25B",
+        "color11": "#B6C844",
+        "color12": "#778788",
+        "color13": "#A1A8A3",
+        "color14": "#B9C2B5",
+        "color15": "#dfe0c9"
+    }
+}
