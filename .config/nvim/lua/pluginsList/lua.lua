@@ -30,6 +30,10 @@ return require("packer").startup(
         use {"nvim-lua/lsp_extensions.nvim"}
         use {"cespare/vim-toml"}
         use {"iamcco/markdown-preview.nvim"}
-
-    end
+        use {"mboughaba/i3config.vim"}
+        use {"vimsence/vimsence"}
+        use {"vim-ruby/vim-ruby"} 
+        use {"tpope/vim-commentary"}
+        use {"tpope/vim-endwise"}
+      end
 )

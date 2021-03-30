@@ -23,7 +23,7 @@ local indent = 2
 cmd "colorscheme base16-onedark"
 cmd "syntax enable"
 cmd "syntax on"
-
+cmd "set noswapfile"
 g.auto_save = 1
 g.indentLine_enabled = 1
 g.indentLine_char_list = {'▏'}
@@ -59,4 +59,5 @@ require("lspkind").init(
         File = " "
     }
 )
+g.mkdp_auto_start = 1
 vim.api.nvim_exec("source $HOME/.config/nvim/initiki.vim",true)

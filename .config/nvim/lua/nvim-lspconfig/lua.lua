@@ -29,7 +29,7 @@ map("n", "[d", "<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>", opts)
 map("n", "]d", "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>", opts)
 map("n", "<space>q", "<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>", opts)
 
---  lsp for html , css and js/ts
+--  lsp for go & rust & ruby
 require'lspconfig'.gopls.setup{}
 require'lspconfig'.rust_analyzer.setup{}
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
@@ -39,3 +39,4 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
     update_in_insert = true,
   }
 )
+require'lspconfig'.solargraph.setup{}
