@@ -15,6 +15,6 @@ fi
 /usr/libexec/polkit-gnome-authentication-agent-1 &
 dunst &
 clipit &
-feh --bg-scale /home/dogu/Masaüstü/DİĞER/i3-4k.jpg
+feh --bg-scale /home/dogu/Masaüstü/DİĞER/wallhaven-4g5r8l_1024x768.png
 ~/.config/polybar/launch.sh
 #xrandr --output HDMI-1 --mode 1280x720
