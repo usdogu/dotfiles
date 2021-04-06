@@ -17,6 +17,16 @@ require "nvim-web-devicons".setup {
             color = "#EBCB8B",
             name = "js"
         },
+        ts = {
+            icon = "ﯤ",
+            color = "#519ABA",
+            name = "ts"
+        },
+        kt = {
+            icon = "󱈙",
+            color = "#ffcb91",
+            name = "kt"
+        },
         png = {
             icon = " ",
             color = "#BD77DC",
@@ -47,6 +57,26 @@ require "nvim-web-devicons".setup {
             color = "#C8CCD4",
             name = "out"
         },
+        Dockerfile = {
+            icon = "",
+            color = "#b8b5ff",
+            name = "Dockerfile"
+        },
+        rb = {
+            icon = "",
+            color = "#ff75a0",
+            name = "rb"
+        },
+        vue = {
+            icon = "﵂",
+            color = "#7eca9c",
+            name = "vue"
+        },
+        py = {
+            icon = "",
+            color = "#a7c5eb",
+            name = "py"
+        },
         toml = {
             icon = "",
             color = "#61afef",
@@ -56,6 +86,16 @@ require "nvim-web-devicons".setup {
             icon = "",
             color = "#DE6B74",
             name = "lock"
+        },
+        zip = {
+            icon = "",
+            color = "#EBCB8B",
+            name = "zip"
+        },
+        xz = {
+            icon = "",
+            color = "#EBCB8B",
+            name = "xz"
         }
     }
 }

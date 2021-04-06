@@ -1,10 +1,11 @@
 local gl = require("galaxyline")
 local gls = gl.section
-gl.short_line_list = {"LuaTree", "vista", "dbui"}
+
+gl.short_line_list = {" "} -- keeping this table { } as empty will show inactive statuslines
 
 local colors = {
-    bg = "#282c34",
-    line_bg = "#282c34",
+    bg = "#1e222a",
+    line_bg = "#1e222a",
     fg = "#D8DEE9",
     fg_green = "#65a380",
     yellow = "#A3BE8C",
@@ -16,7 +17,7 @@ local colors = {
     magenta = "#c678dd",
     blue = "#22262C",
     red = "#DF8890",
-    lightbg = "#3C4048",
+    lightbg = "#282c34",
     nord = "#81A1C1",
     greenYel = "#EBCB8B"
 }
@@ -24,16 +25,16 @@ local colors = {
 gls.left[1] = {
     leftRounded = {
         provider = function()
-            return ""
+            return ""
         end,
         highlight = {colors.nord, colors.bg}
     }
 }
 
 gls.left[2] = {
-    ViMode = {
+    statusIcon = {
         provider = function()
-            return ""
+            return "   "
         end,
         highlight = {colors.bg, colors.nord},
         separator = " ",
@@ -60,7 +61,7 @@ gls.left[4] = {
 gls.left[5] = {
     teech = {
         provider = function()
-            return ""
+            return ""
         end,
         separator = " ",
         highlight = {colors.lightbg, colors.bg}
@@ -141,7 +142,7 @@ gls.left[12] = {
 gls.right[1] = {
     GitIcon = {
         provider = function()
-            return "  "
+            return "   "
         end,
         condition = require("galaxyline.provider_vcs").check_git_workspace,
         highlight = {colors.green, colors.line_bg}
@@ -159,7 +160,7 @@ gls.right[2] = {
 gls.right[3] = {
     right_LeftRounded = {
         provider = function()
-            return ""
+            return ""
         end,
         separator = " ",
         separator_highlight = {colors.bg, colors.bg},
@@ -168,7 +169,7 @@ gls.right[3] = {
 }
 
 gls.right[4] = {
-    SiMode = {
+    ViMode = {
         provider = function()
             local alias = {
                 n = "NORMAL",
@@ -197,7 +198,7 @@ gls.right[5] = {
 gls.right[6] = {
     rightRounded = {
         provider = function()
-            return ""
+            return ""
         end,
         highlight = {colors.fg, colors.bg}
     }

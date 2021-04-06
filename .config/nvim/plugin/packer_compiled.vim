@@ -32,10 +32,6 @@ local function try_loadstring(s, component, name)
 end
 
 _G.packer_plugins = {
-  ["base16-vim"] = {
-    loaded = true,
-    path = "/home/dogu/.local/share/nvim/site/pack/packer/start/base16-vim"
-  },
   ["galaxyline.nvim"] = {
     loaded = true,
     path = "/home/dogu/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
@@ -44,17 +40,9 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dogu/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
   },
-  ["i3config.vim"] = {
+  ["indent-blankline.nvim"] = {
     loaded = true,
-    path = "/home/dogu/.local/share/nvim/site/pack/packer/start/i3config.vim"
-  },
-  indentLine = {
-    loaded = true,
-    path = "/home/dogu/.local/share/nvim/site/pack/packer/start/indentLine"
-  },
-  ["lsp_extensions.nvim"] = {
-    loaded = true,
-    path = "/home/dogu/.local/share/nvim/site/pack/packer/start/lsp_extensions.nvim"
+    path = "/home/dogu/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim"
   },
   ["lspkind-nvim"] = {
     loaded = true,
@@ -68,9 +56,17 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dogu/.local/share/nvim/site/pack/packer/start/neoformat"
   },
+  ["neoscroll.nvim"] = {
+    loaded = true,
+    path = "/home/dogu/.local/share/nvim/site/pack/packer/start/neoscroll.nvim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/home/dogu/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
+  },
+  ["nvim-base16.lua"] = {
+    loaded = true,
+    path = "/home/dogu/.local/share/nvim/site/pack/packer/start/nvim-base16.lua"
   },
   ["nvim-bufferline.lua"] = {
     loaded = true,
@@ -133,10 +129,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dogu/.local/share/nvim/site/pack/packer/start/vim-closetag"
   },
-  ["vim-commentary"] = {
-    loaded = true,
-    path = "/home/dogu/.local/share/nvim/site/pack/packer/start/vim-commentary"
-  },
   ["vim-devicons"] = {
     loaded = true,
     path = "/home/dogu/.local/share/nvim/site/pack/packer/start/vim-devicons"
@@ -160,6 +152,10 @@ _G.packer_plugins = {
   vimsence = {
     loaded = true,
     path = "/home/dogu/.local/share/nvim/site/pack/packer/start/vimsence"
+  },
+  ["xresources-nvim"] = {
+    loaded = true,
+    path = "/home/dogu/.local/share/nvim/site/pack/packer/start/xresources-nvim"
   }
 }
 
