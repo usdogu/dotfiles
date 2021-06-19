@@ -1,4 +1,4 @@
-set PATH /home/dogu/.cargo/bin /usr/local/bin /usr/bin /bin /usr/X11R6/bin ~/.cargo/bin
+set PATH /home/dogu/.cargo/bin /usr/local/sbin /usr/local/bin /usr/bin /usr/bin/site_perl /usr/bin/vendor_perl /usr/bin/core_perl
 alias cls=clear
 alias s=sudo
 alias cc="cargo check"
@@ -8,9 +8,8 @@ alias ls=lsd
 alias ll="lsd -l"
 alias la="lsd -A"
 alias l="lsd -Al"
-alias saat="date | cut -d' ' -f5"
-alias upt="echo '123456' | sudo -S zypper ref && echo '123456' | sudo -S zypper dup"
+alias saat="date '+%H:%M'"
 alias cat=bat
 alias cut=choose
-alias rm="rip"
+alias rm=rip
 alias sed=sd
