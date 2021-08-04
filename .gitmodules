@@ -1,0 +1,3 @@
+[submodule ".config/dwm-dots"]
+	path = .config/dwm-dots
+	url = https://github.com/usdogu/dwm-dots.git
