@@ -2,11 +2,18 @@ alias cls=clear
 alias s=sudo
 alias cc="cargo check"
 alias cr="cargo run"
-alias v=nvim
 alias ls=lsd
 alias ll="lsd -l"
 alias la="lsd -A"
 alias l="lsd -Al"
 alias saat="date '+%H:%M'"
 alias cat=bat
+alias cut=choose
 alias rm=rip
+alias v=nvim
+set -U fish_greeting
+set -gx EDITOR nvim
+function cd
+ builtin cd $argv && ls;
+end
+starship init fish | source
