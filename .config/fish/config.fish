@@ -1,3 +1,6 @@
+set -U fish_greeting
+set -gx EDITOR nvim
+
 alias cls=clear
 alias s=sudo
 alias cc="cargo check"
@@ -8,12 +11,15 @@ alias la="lsd -A"
 alias l="lsd -Al"
 alias saat="date '+%H:%M'"
 alias cat=bat
-alias cut=choose
 alias rm=rip
 alias v=nvim
-set -U fish_greeting
-set -gx EDITOR nvim
+
 function cd
  builtin cd $argv && ls;
 end
+
+function sv
+ sudo -e $argv
+end
+
 starship init fish | source
