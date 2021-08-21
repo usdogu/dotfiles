@@ -21,5 +21,4 @@ end
 function sv
  sudo -e $argv
 end
-
 starship init fish | source

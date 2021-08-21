@@ -1,0 +1,6 @@
+super + e; e
+  emacsclient -c -a 'emacs'
+super + e; d
+  emacsclient -c -a 'emacs' --eval '(dired nil)'
+super + e; v
+  emacsclient -c -a 'emacs' --eval '(+vterm/here nil)'
