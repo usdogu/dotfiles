@@ -13,6 +13,7 @@ alias saat="date '+%H:%M'"
 alias cat=bat
 alias rm=rip
 alias v=nvim
+alias vd="nvim -d"
 
 function cd
  builtin cd $argv && ls;
