@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-sudo pacman -Syyyu && sudo pacman -S git emacs ripgrep fd neovim nerd-fonts-jetbrains-mono libx11 libxinerama libxft libxext libxrender ttf-hack ttf-joypixels llvm
+sudo pacman -Syyyu && sudo pacman -S git emacs ripgrep fd neovim libx11 libxinerama libxft libxext libxrender ttf-hack ttf-joypixels llvm
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # create necessary dirs
@@ -32,6 +32,14 @@ git clone --recurse-submodules https://github.com/usdogu/dotfiles.git
 cd dotfiles
 
 #install other required things
+echo "Cloning Font..."
+git clone https://aur.archlinux.org/nerd-fonts-jetbrains-mono.git
+cd nerd-fonts-jetbrains-mono
+makepkg -si
+cd ..
+rm -rf nerd-fonts-jetbrains-mono
+echo "Cloned Font."
+
 echo "Installing Doom Emacs..."
 git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
 ~/.emacs.d/bin/doom install
