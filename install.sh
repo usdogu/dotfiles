@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-sudo pacman -Syyyu && sudo pacman -S git emacs ripgrep fd neovim libx11 libxinerama libxft libxext libxrender ttf-hack ttf-joypixels llvm
+sudo pacman -Syyyu && sudo pacman -S git emacs ripgrep fd neovim libx11 libxinerama libxft libxext libxrender ttf-hack ttf-joypixels llvm lsd clang
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # create necessary dirs
