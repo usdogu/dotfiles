@@ -46,7 +46,7 @@ git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
 ~/.emacs.d/bin/doom install
 echo "Doom Emacs installed."
 
-cp -r .doom.d ~/.doom.d
+cp -r .doom.d ~/
 cp .xinitrc ~
 cp .Xresources ~
 
