@@ -1,7 +1,8 @@
 #!/usr/bin/bash
 
-sudo pacman -Syyyu && sudo pacman -S git emacs ripgrep fd neovim libx11 libxinerama libxft libxext libxrender ttf-hack ttf-joypixels llvm lsd clang
+sudo pacman -Syyyu && sudo pacman -S git emacs ripgrep fd neovim libx11 libxinerama libxft libxext libxrender ttf-hack ttf-joypixels llvm lsd clang fish
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+. "$HOME/.cargo/env"
 
 # create necessary dirs
 mkdir -p ~/Derleme && cd ~/Derleme
