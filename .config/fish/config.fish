@@ -1,8 +1,9 @@
+set -gx PATH ~/.cargo/bin /usr/local/sbin /usr/local/bin /usr/bin /usr/bin/site_perl /usr/bin/vendor_perl /usr/bin/core_perl ~/bin ~/.local/bin ~/go/bin ~/.dotnet/tools ~/.nimble/bin
 set -U fish_greeting
 set -gx EDITOR nvim
 
 alias cls=clear
-alias s=sudo
+alias s=doas
 alias cc="cargo check"
 alias cr="cargo run"
 alias ls=lsd
@@ -14,6 +15,7 @@ alias cat=bat
 alias rm=rip
 alias v=nvim
 alias vd="nvim -d"
+alias tmux=zellij
 
 function cd
  builtin cd $argv && ls;
@@ -23,3 +25,5 @@ function sv
  sudo -e $argv
 end
 starship init fish | source
+zoxide init --cmd cd fish | source
+
