@@ -16,6 +16,7 @@ alias rm=rip
 alias v=nvim
 alias vd="nvim -d"
 alias tmux=zellij
+alias paru="paru --sudo doas"
 
 function cd
  builtin cd $argv && ls;
