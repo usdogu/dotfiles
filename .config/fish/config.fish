@@ -17,6 +17,7 @@ alias v=nvim
 alias vd="nvim -d"
 alias tmux=zellij
 alias paru="paru --sudo doas"
+alias htop="bpytop"
 
 function cd
  builtin cd $argv && ls;
