@@ -57,12 +57,13 @@
   :ensure t
   :config
   (doom-themes-neotree-config)
-   (doom-themes-org-config)
+  (doom-themes-org-config)
   )
 ;;(setq +treemacs-git-mode extended)
 (set-file-template! "\\.org$" :trigger "__" :mode 'org-mode)
 (set-file-template! "/LICEN[CS]E$" :trigger '+file-templates/insert-license)
 (setq doom-fallback-buffer "*dashboard*")
+
 (use-package! elfeed-goodies)
 (elfeed-goodies/setup)
 (setq elfeed-goodies/entry-pane-size 0.5)
@@ -73,12 +74,18 @@
 (evil-define-key 'normal elfeed-search-mode-map
   (kbd "J") 'elfeed-goodies/split-show-next
   (kbd "K") 'elfeed-goodies/split-show-prev)
+
 (use-package emojify
   :hook (after-init . global-emojify-mode))
+
 (xterm-mouse-mode 1)
+
 (map! :leader
       (:prefix ("r" . "registers")
        :desc "Copy to register" "c" #'copy-to-register
        :desc "Insert contents of register" "i" #'insert-register
        :desc "List registers" "l" #'list-registers
        :desc "View a register" "v" #'view-register))
+
+(setq telega-use-docker t)
+(map! :desc "Open Telega" :n "g a t" 'telega)
