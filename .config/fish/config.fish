@@ -17,7 +17,6 @@ alias v=nvim
 alias vd="nvim -d"
 alias tmux=zellij
 alias paru="paru --sudo doas"
-alias htop="bpytop"
 
 function cd
  builtin cd $argv && ls;
@@ -26,6 +25,14 @@ end
 function sv
  sudo -e $argv
 end
+
+function gp
+ git add .
+ git commit -m $argv
+ git push
+
+end
+
 starship init fish | source
 zoxide init --cmd cd fish | source
 
