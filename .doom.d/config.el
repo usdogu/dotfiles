@@ -52,7 +52,9 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
-(setq nimsuggest-path "~/.nimble/bin/nimsuggest")
+
+
+;; General Doom Emacs Settings
 (use-package doom-themes
   :ensure t
   :config
@@ -63,18 +65,6 @@
 (set-file-template! "\\.org$" :trigger "__" :mode 'org-mode)
 (set-file-template! "/LICEN[CS]E$" :trigger '+file-templates/insert-license)
 (setq doom-fallback-buffer "*dashboard*")
-
-(use-package! elfeed-goodies)
-(elfeed-goodies/setup)
-(setq elfeed-goodies/entry-pane-size 0.5)
-(add-hook 'elfeed-show-mode-hook 'visual-line-mode)
-(evil-define-key 'normal elfeed-show-mode-map
-  (kbd "J") 'elfeed-goodies/split-show-next
-  (kbd "K") 'elfeed-goodies/split-show-prev)
-(evil-define-key 'normal elfeed-search-mode-map
-  (kbd "J") 'elfeed-goodies/split-show-next
-  (kbd "K") 'elfeed-goodies/split-show-prev)
-
 (use-package emojify
   :hook (after-init . global-emojify-mode))
 
@@ -87,5 +77,30 @@
        :desc "List registers" "l" #'list-registers
        :desc "View a register" "v" #'view-register))
 
+
+;; Elfeed Settings
+(use-package! elfeed-goodies)
+(elfeed-goodies/setup)
+(setq elfeed-goodies/entry-pane-size 0.5)
+(add-hook 'elfeed-show-mode-hook 'visual-line-mode)
+(evil-define-key 'normal elfeed-show-mode-map
+  (kbd "J") 'elfeed-goodies/split-show-next
+  (kbd "K") 'elfeed-goodies/split-show-prev)
+(evil-define-key 'normal elfeed-search-mode-map
+  (kbd "J") 'elfeed-goodies/split-show-next
+  (kbd "K") 'elfeed-goodies/split-show-prev)
+
+;; Telega Settings
+(map! :desc "Open Telega" :n "C-c C-t" 'telega)
 (setq telega-use-docker t)
-(map! :desc "Open Telega" :n "C-c t" 'telega)
+(setq telega-use-images t)
+(telega-mode-line-mode 1)
+(add-load-path! "~/.emacs.d/.local/straight/repos/telega.el/contrib")
+(require 'ol-telega)
+(require 'telega-mnz)
+(require 'telega-url-shorten)
+(require 'telega-adblock)
+(setq telega-url-shorten-use-images t)
+(global-telega-mnz-mode 1)
+(global-telega-url-shorten-mode 1)
+(telega-adblock-mode 1)
