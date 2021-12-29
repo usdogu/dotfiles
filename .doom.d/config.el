@@ -88,4 +88,4 @@
        :desc "View a register" "v" #'view-register))
 
 (setq telega-use-docker t)
-(map! :desc "Open Telega" :n "g a t" 'telega)
+(map! :desc "Open Telega" :n "C-c t" 'telega)
