@@ -78,6 +78,12 @@
        :desc "View a register" "v" #'view-register))
 (setq fancy-splash-image (concat doom-private-dir "logo.png"))
 
+(use-package nim-mode
+  :ensure t
+  :hook
+  (nim-mode . lsp))
+
+
 ;; Elfeed Settings
 (use-package! elfeed-goodies)
 (elfeed-goodies/setup)
