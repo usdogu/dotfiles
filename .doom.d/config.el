@@ -76,7 +76,7 @@
        :desc "Insert contents of register" "i" #'insert-register
        :desc "List registers" "l" #'list-registers
        :desc "View a register" "v" #'view-register))
-
+(setq fancy-splash-image (concat doom-private-dir "logo.png"))
 
 ;; Elfeed Settings
 (use-package! elfeed-goodies)
@@ -95,6 +95,7 @@
 (setq telega-use-docker t)
 (setq telega-use-images t)
 (telega-mode-line-mode 1)
+(add-hook 'telega-msg-ignore-predicates 'telega-msg-from-blocked-sender-p)
 (add-load-path! "~/.emacs.d/.local/straight/repos/telega.el/contrib")
 (require 'ol-telega)
 (require 'telega-mnz)
