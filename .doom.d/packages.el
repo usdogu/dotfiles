@@ -52,3 +52,4 @@
 (package! language-detection)
 (when (not (or (> emacs-major-version 28)  (boundp 'mac-mouse-wheel-smooth-scroll)))
   (package! good-scroll))
+(package! aggressive-indent)

@@ -84,12 +84,17 @@
   (nim-mode . lsp))
 
 (if (boundp 'mac-mouse-wheel-smooth-scroll)
-  (setq  mac-mouse-wheel-smooth-scroll t)
+    (setq  mac-mouse-wheel-smooth-scroll t)
   (if (> emacs-major-version 28)
-    (pixel-scroll-precision-mode)
+      (pixel-scroll-precision-mode)
     (use-package! good-scroll
       :config
       (good-scroll-mode 1))))
+
+(add-hook 'emacs-lisp-mode-hook #'aggressive-indent-mode)
+
+(after! lsp-clangd (set-lsp-priority! 'clangd 2))
+
 
 
 ;; Elfeed Settings
