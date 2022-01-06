@@ -55,8 +55,13 @@
 
 
 ;; General Doom Emacs Settings
-(use-package doom-themes
-  :ensure t
+
+(setq doom-font (font-spec :family "Iosevka" :size 14)
+      doom-variable-pitch-font (font-spec :family "Iosevka" :size 15)
+      doom-big-font (font-spec :family "Iosevka" :size 24))
+
+(use-package! doom-themes
+  :defer t
   :config
   (doom-themes-neotree-config)
   (doom-themes-org-config)
@@ -65,10 +70,7 @@
 (set-file-template! "\\.org$" :trigger "__" :mode 'org-mode)
 (set-file-template! "/LICEN[CS]E$" :trigger '+file-templates/insert-license)
 (setq doom-fallback-buffer "*dashboard*")
-(use-package emojify
-  :hook (after-init . global-emojify-mode))
 
-(xterm-mouse-mode 1)
 
 (map! :leader
       (:prefix ("r" . "registers")
@@ -76,12 +78,11 @@
        :desc "Insert contents of register" "i" #'insert-register
        :desc "List registers" "l" #'list-registers
        :desc "View a register" "v" #'view-register))
+
 (setq fancy-splash-image (concat doom-private-dir "logo.png"))
 
-(use-package nim-mode
-  :ensure t
-  :hook
-  (nim-mode . lsp))
+
+(add-hook! 'nim-mode-local-vars-hook #'lsp!)
 
 (if (boundp 'mac-mouse-wheel-smooth-scroll)
     (setq  mac-mouse-wheel-smooth-scroll t)
@@ -96,18 +97,10 @@
 (after! lsp-clangd (set-lsp-priority! 'clangd 2))
 
 
-
 ;; Elfeed Settings
-(use-package! elfeed-goodies)
-(elfeed-goodies/setup)
-(setq elfeed-goodies/entry-pane-size 0.5)
-(add-hook 'elfeed-show-mode-hook 'visual-line-mode)
-(evil-define-key 'normal elfeed-show-mode-map
-  (kbd "J") 'elfeed-goodies/split-show-next
-  (kbd "K") 'elfeed-goodies/split-show-prev)
-(evil-define-key 'normal elfeed-search-mode-map
-  (kbd "J") 'elfeed-goodies/split-show-next
-  (kbd "K") 'elfeed-goodies/split-show-prev)
+(after! elfeed
+  (add-hook! 'elfeed-search-mode-hook #'elfeed-update)
+  )
 
 ;; Telega Settings
 (map! :desc "Open Telega" :n "C-c C-t" 'telega)
