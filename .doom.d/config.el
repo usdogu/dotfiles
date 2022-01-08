@@ -21,6 +21,9 @@
 ;; font string. You generally only need these two:
 ;; (setq doom-font (font-spec :family "monospace" :size 12 :weight 'semi-light)
 ;;       doom-variable-pitch-font (font-spec :family "sans" :size 13))
+(setq doom-font (font-spec :family "Iosevka" :size 14)
+      doom-variable-pitch-font (font-spec :family "Iosevka" :size 14)
+      doom-big-font (font-spec :family "Iosevka" :size 24))
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
@@ -56,21 +59,14 @@
 
 ;; General Doom Emacs Settings
 
-(setq doom-font (font-spec :family "Iosevka" :size 14)
-      doom-variable-pitch-font (font-spec :family "Iosevka" :size 15)
-      doom-big-font (font-spec :family "Iosevka" :size 24))
-
 (use-package! doom-themes
   :defer t
   :config
   (doom-themes-neotree-config)
   (doom-themes-org-config)
   )
-;;(setq +treemacs-git-mode extended)
-(set-file-template! "\\.org$" :trigger "__" :mode 'org-mode)
-(set-file-template! "/LICEN[CS]E$" :trigger '+file-templates/insert-license)
+(setq fancy-splash-image (concat doom-private-dir "logo.png"))
 (setq doom-fallback-buffer "*dashboard*")
-
 
 (map! :leader
       (:prefix ("r" . "registers")
@@ -79,8 +75,8 @@
        :desc "List registers" "l" #'list-registers
        :desc "View a register" "v" #'view-register))
 
-(setq fancy-splash-image (concat doom-private-dir "logo.png"))
-
+(set-file-template! "\\.org$" :trigger "__" :mode 'org-mode)
+(set-file-template! "/LICEN[CS]E$" :trigger '+file-templates/insert-license)
 
 (add-hook! 'nim-mode-local-vars-hook #'lsp!)
 
@@ -110,7 +106,6 @@
   (telega-mode-line-mode 1)
   (add-hook 'telega-msg-ignore-predicates 'telega-msg-from-blocked-sender-p)
   (add-load-path! "~/.emacs.d/.local/straight/repos/telega.el/contrib")
-  (require 'ol-telega)
   (require 'telega-mnz)
   (require 'telega-url-shorten)
   (require 'telega-adblock)
@@ -118,6 +113,4 @@
   (global-telega-mnz-mode 1)
   (global-telega-url-shorten-mode 1)
   (telega-adblock-mode 1)
-
-
   )
