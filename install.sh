@@ -1,6 +1,8 @@
 #!/usr/bin/bash
 
-sudo pacman -Syyyu && sudo pacman -S git emacs ripgrep fd neovim libx11 libxinerama libxft libxext libxrender ttf-hack ttf-joypixels llvm lsd clang fish sxhkd zoxide zellij doas bpytop
+
+sudo pacman -Syyyu && sudo pacman -S git emacs ripgrep fd neovim libx11 libxinerama libxft libxext libxrender ttf-hack ttf-joypixels llvm lsd clang fish sxhkd zoxide zellij doas bpytop nyxt
+
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 . "$HOME/.cargo/env"
 
@@ -54,7 +56,7 @@ cd .config
 cp starship.toml ~/.config/
 cp -r sxhkd ~/.config/sxhkd
 cp fish/config.fish ~/.config/fish/config.fish
-
+cp -r nyxt ~/.config/nyxt
 cd dwm-dots
 sudo make install
 
