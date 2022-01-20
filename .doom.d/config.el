@@ -32,7 +32,7 @@
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
-;;(setq org-directory "~/org/")
+(setq org-directory "~/org/")
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -68,13 +68,6 @@
 (setq fancy-splash-image (concat doom-private-dir "logo.png"))
 (setq doom-fallback-buffer "*dashboard*")
 
-(map! :leader
-      (:prefix ("r" . "registers")
-       :desc "Copy to register" "c" #'copy-to-register
-       :desc "Insert contents of register" "i" #'insert-register
-       :desc "List registers" "l" #'list-registers
-       :desc "View a register" "v" #'view-register))
-
 (set-file-template! "\\.org$" :trigger "__" :mode 'org-mode)
 (set-file-template! "/LICEN[CS]E$" :trigger '+file-templates/insert-license)
 
@@ -108,9 +101,13 @@
   (add-load-path! "~/.emacs.d/.local/straight/repos/telega.el/contrib")
   (require 'telega-mnz)
   (require 'telega-url-shorten)
-  (require 'telega-adblock)
   (setq telega-url-shorten-use-images t)
   (global-telega-mnz-mode 1)
   (global-telega-url-shorten-mode 1)
-  (telega-adblock-mode 1)
+  )
+
+
+;; Org Roam Settings
+(after! org-roam
+  (setq org-roam-directory "~/Notes")
   )
