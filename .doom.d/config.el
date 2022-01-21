@@ -58,7 +58,6 @@
 
 
 ;; General Doom Emacs Settings
-
 (use-package! doom-themes
   :defer t
   :config
@@ -111,3 +110,4 @@
 (after! org-roam
   (setq org-roam-directory "~/Notes")
   )
+
