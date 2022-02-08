@@ -1,6 +1,7 @@
 * root :elfeed:
 ** Programming :programming:
 *** [[https://this-week-in-rust.org/rss.xml][This Week in Rust]] :rust:
+*** [[https://fasterthanli.me/index.xml][Faster Than Lime]] :rust:
 *** [[https://nim-lang.org/feed.xml][Nim Blog]] :nim:
 *** [[http://feeds.feedburner.com/codinghorror][Coding Horror]] :blog:
 *** [[https://lobste.rs/rss][Lobsters]]
@@ -15,3 +16,4 @@
 *** [[https://www.reddit.com/r/emacs.rss][Emacs]] :reddit:
 *** [[https://aliquote.org/index.xml][aliquote]] :blog:
 *** [[https://blog.tecosaur.com/tmio/rss.xml][This Month In Org]] :org:
+*** [[https://sachachua.com/blog/feed/][Sacha Chua]] :blog:
