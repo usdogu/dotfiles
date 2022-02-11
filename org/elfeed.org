@@ -5,6 +5,8 @@
 *** [[https://nim-lang.org/feed.xml][Nim Blog]] :nim:
 *** [[http://feeds.feedburner.com/codinghorror][Coding Horror]] :blog:
 *** [[https://lobste.rs/rss][Lobsters]]
+*** [[https://zigmonthly.org/index.xml][Zig Monthly]] :zig:
+*** [[https://githubengineering.com/][Github Engineering]]
 ** News :news:
 *** [[https://www.ntv.com.tr/turkiye.rss][NTV]]
 *** [[https://news.ycombinator.com/rss][Hacker News]]
