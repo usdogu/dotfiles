@@ -65,7 +65,7 @@
   (doom-themes-org-config)
   )
 (setq fancy-splash-image (concat doom-private-dir "logo.png"))
-(setq doom-fallback-buffer "*dashboard*")
+(setq doom-fallback-buffer "*doom*")
 
 (set-file-template! "\\.org$" :trigger "__" :mode 'org-mode)
 (set-file-template! "/LICEN[CS]E$" :trigger '+file-templates/insert-license)
@@ -83,7 +83,8 @@
 (add-hook 'emacs-lisp-mode-hook #'aggressive-indent-mode)
 
 (after! lsp-clangd (set-lsp-priority! 'clangd 2))
-
+(setq vterm-kill-buffer-on-exit t)
+(map! :after evil :gnvi "C-f" #'consult-line)
 
 ;; Elfeed Settings
 (after! elfeed

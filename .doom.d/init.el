@@ -21,8 +21,8 @@
 
        :completion
        company           ; the ultimate code completion backend
-       ;;helm              ; the *other* search engine for love and life
-       ;;ido               ; the other *other* search engine...
+       ;;helm            ; the *other* search engine for love and life
+       ;;ido             ; the other *other* search engine...
        (ivy +icons +fuzzy +prescient)               ; a search engine for love and life
        vertico           ; the search engine of the future
 
@@ -49,7 +49,7 @@
        vi-tilde-fringe   ; fringe tildes to mark beyond EOB
        ;;window-select     ; visually switch windows
        workspaces        ; tab emulation, persistence & separate workspaces
-       ;;zen               ; distraction-free coding or writing
+       zen               ; distraction-free coding or writing
 
        :editor
        (evil +everywhere); come to the dark side, we have cookies
@@ -169,7 +169,7 @@
        ;;terra             ; Earth and Moon in alignment for performance.
        ;;web               ; the tubes
        yaml              ; JSON, but readable
-       ;;(zig +lsp)               ; C, but simpler
+       (zig +lsp)               ; C, but simpler
 
        :email
        ;;(mu4e +org +gmail)
