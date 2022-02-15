@@ -112,3 +112,4 @@
   (setq org-roam-directory "~/Notes")
   )
 
+(load! "format-time-string-patch.el")
